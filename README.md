@@ -1,3 +1,10 @@
+# Tabtastic
+## Tab and session manager
+
+![Screenshot of my super rough proof of concept](/assets/images/screenshot.png)
+
+------------------------
+powered by
 <div align="center">
 
 <picture>
