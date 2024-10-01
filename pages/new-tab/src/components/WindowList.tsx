@@ -1,4 +1,5 @@
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
 
 import TabsList from './TabsList';
 
@@ -10,7 +11,12 @@ export default function WindowList({ windows }: { windows: any[] }) {
           <CardHeader>
             <CardTitle>
               <div>
-                Window {index + 1} - ID: {window.id}
+                Window {index + 1} - ID: {window.id}{' '}
+                {window.focused && (
+                  <Badge variant="outline" className="ml-2">
+                    Active
+                  </Badge>
+                )}
                 <br />
                 {window.tabs.length} tabs
               </div>
